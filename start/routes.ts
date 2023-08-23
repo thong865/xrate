@@ -27,6 +27,8 @@ Route.get('/api/currencies','ExchangesController.indexCurrencies')
 Route.post('/api/currencies','ExchangesController.StoreCurrencies')
 
 // exchange rate
+Route.get('/api/exchangerate/rate','ExchangesController.findRate')
+
 Route.post('/api/exchangerate','ExchangesController.StoreRate')
 Route.post('/api/exchangerate/ftrad','ExchangesController.TxnTradCurrency')
 Route.post('/api/exchangerate/ftrad_simple','ExchangesController.SimpleTradCurrency')
